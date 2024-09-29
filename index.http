@@ -1,0 +1,25 @@
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "John Doe"
+}
+
+### add user address 
+
+POST http://localhost:3000/users/1/address
+Content-Type: application/json
+
+{
+  "street": "321 Main St",
+  "city": "New York",
+  "state": "NY",
+  "zip_code": "10001"
+}
+
+#### get user 
+GET http://localhost:3000/users
+
+### get user address
+GET http://localhost:3000/users/1/address
